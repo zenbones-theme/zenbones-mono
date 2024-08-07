@@ -1,0 +1,140 @@
+[buildPlans.ZenbonesMono]
+family = "Zenbones Mono"
+spacing = "term"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = true
+noLigation = false
+
+  [buildPlans.ZenbonesMono.widths.Normal]
+  shape = 548
+  menu = 5
+  css = "normal"
+
+  [buildPlans.ZenbonesMono.weights.regular]
+  shape = 425
+  menu = 400
+  css = 400
+
+  [buildPlans.ZenbonesMono.weights.semibold]
+  shape = 600
+  menu = 600
+  css = 600
+
+  [buildPlans.ZenbonesMono.weights.bold]
+  shape = 700
+  menu = 700
+  css = 700
+
+  [buildPlans.ZenbonesMono.metricOverride]
+  xHeight = 550
+
+  [buildPlans.ZenbonesMono.ligations]
+  enables = [
+    "arrow-l",
+    "arrow-r",
+    "arrow-lr",
+    "trig",
+    "ltgt-diamond-tag",
+    "ltgt-slash-tag",
+    "slash-asterisk",
+    "html-comment"
+  ]
+
+  [buildPlans.ZenbonesMono.variants]
+  inherits = "ss08"
+
+    [buildPlans.ZenbonesMono.variants.design]
+    two = "straight-neck-serifless"
+    three = "flat-top-serifless"
+    four = "semi-open-serifless"
+    five = "oblique-flat-serifless"
+    six = "straight-bar"
+    seven = "curly-serifless-crossbar"
+    nine = "straight-bar"
+    zero = "tall-slashed-cutout"
+    capital-d = "standard-serifless"
+    l = "serifed-semi-tailed"
+    m = "short-leg-serifless"
+    u = "toothless-rounded-serifless"
+    tittle = "square"
+    diacritic-dot = "square"
+    punctuation-dot = "square"
+    underscore = "above-baseline"
+    caret = "low"
+    paren = "flat-arc"
+    brace = "curly-flat-boundary"
+    dollar = "through"
+    percent = "rings-continuous-slash"
+
+    [buildPlans.ZenbonesMono.variants.italic]
+    a = "single-storey-tailed"
+    e = "rounded"
+    i = "tailed-serifed"
+    f = "tailed"
+
+[buildPlans.ZenbonesSlabMono]
+family = "Zenbones Slab Mono"
+spacing = "term"
+serifs = "slab"
+noCvSs = true
+exportGlyphNames = true
+noLigation = false
+
+widths.inherits = "buildPlans.ZenbonesMono"
+ligations.inherits = "buildPlans.ZenbonesMono"
+
+  [buildPlans.ZenbonesSlabMono.metricOverride]
+  xHeight = 550
+
+  [buildPlans.ZenbonesSlabMono.weights.regular]
+  shape = 400
+  menu = 400
+  css = 400
+
+  [buildPlans.ZenbonesSlabMono.weights.semibold]
+  shape = 600
+  menu = 600
+  css = 600
+
+  [buildPlans.ZenbonesSlabMono.weights.bold]
+  shape = 700
+  menu = 700
+  css = 700
+
+  [buildPlans.ZenbonesSlabMono.variants]
+  inherits = "ss08"
+
+    [buildPlans.ZenbonesSlabMono.variants.design]
+    two = "straight-neck-serifed"
+    three = "flat-top-serifed"
+    four = "semi-open-serifed"
+    five = "oblique-flat-serifed"
+    six = "straight-bar"
+    seven = "curly-serifed-crossbar"
+    nine = "straight-bar"
+    zero = "tall-slashed-cutout"
+    l = "serifed-semi-tailed"
+    m = "short-leg-serifed"
+    u = "toothless-rounded-serifed"
+    tittle = "square"
+    diacritic-dot = "square"
+    punctuation-dot = "square"
+    underscore = "above-baseline"
+    caret = "low"
+    paren = "flat-arc"
+    brace = "curly-flat-boundary"
+    dollar = "through"
+    percent = "rings-continuous-slash"
+
+    [buildPlans.ZenbonesSlabMono.variants.italic]
+    a = "single-storey-tailed"
+    e = "rounded"
+    i = "tailed-serifed"
+    f = "tailed"
+    m = "short-leg-top-left-and-bottom-right-serifed"
+    p = "eared-motion-serifed"
+    q = "straight-serifless"
+    s = "unilateral-serifed"
+    u = "toothless-rounded-motion-serifed"
+    z = "curly-top-serifed"
