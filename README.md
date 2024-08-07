@@ -24,6 +24,9 @@ The font can be download from the [release page](https://github.com/zenbones-the
 <img width="876" alt="Slab specimen" src="https://github.com/user-attachments/assets/f47e44f8-ac02-4197-aae0-f1a8208c0f0d">
 
 ### Examples
+
+<img width="714" alt="Lua Sans example" src="https://github.com/user-attachments/assets/cac0a04b-925c-4088-843a-e8cb68713730">
+
 <img width="574" alt="Sans React example" src="https://github.com/user-attachments/assets/4127c7e3-4c59-4c59-9ceb-662c8c123e19">
 
 <img width="587" alt="Slab React example" src="https://github.com/user-attachments/assets/bb87f314-2661-4f66-8ce5-39d9782db615">
