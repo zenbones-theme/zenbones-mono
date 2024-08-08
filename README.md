@@ -5,7 +5,7 @@ Comfy. Condensed. Coding.
 A custom Iosevka build drawing inspirations from various programming
 typefaces.
 
-- Semi-extended
+- Semi-condensed
 - Inherits Pragmata Pro variant
 - Higher xHeight
 - Slightly thicker regular width
