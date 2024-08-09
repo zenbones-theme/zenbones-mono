@@ -2,9 +2,8 @@
 family = "Zenbones Mono"
 spacing = "term"
 serifs = "sans"
-noCvSs = true
 exportGlyphNames = true
-noLigation = false
+buildTextureFeature = true
 
   [buildPlans.ZenbonesMono.widths.Normal]
   shape = 548
@@ -30,15 +29,17 @@ noLigation = false
   xHeight = 550
 
   [buildPlans.ZenbonesMono.ligations]
+  inherits = "default-calt"
+  disables = [
+    "lteq",
+    "eqlt",
+    "gteq",
+    "exeq"
+  ]
   enables = [
-    "arrow-l",
-    "arrow-r",
-    "arrow-lr",
-    "trig",
-    "ltgt-diamond-tag",
-    "ltgt-slash-tag",
-    "slash-asterisk",
-    "html-comment"
+    "lteq-separate",
+    "eqlt-separate",
+    "gteq-separate"
   ]
 
   [buildPlans.ZenbonesMono.variants]
@@ -77,9 +78,8 @@ noLigation = false
 family = "Zenbones Slab Mono"
 spacing = "term"
 serifs = "slab"
-noCvSs = true
 exportGlyphNames = true
-noLigation = false
+buildTextureFeature = true
 
 widths.inherits = "buildPlans.ZenbonesMono"
 ligations.inherits = "buildPlans.ZenbonesMono"
