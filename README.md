@@ -18,6 +18,7 @@ The font can be download from the [release page](https://github.com/zenbones-the
 ## Specimen
 
 ### Sans
+Based more from Pragmata Pro.
 <img width="1088" alt="Sans regular" src="https://github.com/user-attachments/assets/e39aa72f-dd6b-4d73-b46c-0bd81fcbfadd">
 <img width="1088" alt="Sans italic" src="https://github.com/user-attachments/assets/54123db2-e9b6-4987-9e96-881ddc1d5bd8">
 
@@ -34,6 +35,7 @@ The font can be download from the [release page](https://github.com/zenbones-the
 
 
 ### Brainy
+Based more from JetBrains and Berkeley Mono.
 <img width="1088" alt="Brainy regular" src="https://github.com/user-attachments/assets/d84e555e-64fc-4aa7-a47d-2bfdd60a11e5">
 <img width="1088" alt="Brainy italic" src="https://github.com/user-attachments/assets/dfd9c1d1-43ef-4c82-95df-33f5a874242c">
 
