@@ -18,18 +18,28 @@ The font can be download from the [release page](https://github.com/zenbones-the
 ## Specimen
 
 ### Sans
-<img width="877" alt="Sans specimen" src="https://github.com/user-attachments/assets/8ef4e6a6-bbc5-4f4d-8b72-afedd3859f89">
+<img width="1088" alt="Sans regular" src="https://github.com/user-attachments/assets/e39aa72f-dd6b-4d73-b46c-0bd81fcbfadd">
+<img width="1088" alt="Sans italic" src="https://github.com/user-attachments/assets/54123db2-e9b6-4987-9e96-881ddc1d5bd8">
+
+#### Example
+<img width="470" alt="Sans example" src="https://github.com/user-attachments/assets/67fdbb96-a2b4-4b25-afd0-034b331b3c93">
+
 
 ### Slab
-<img width="876" alt="Slab specimen" src="https://github.com/user-attachments/assets/f47e44f8-ac02-4197-aae0-f1a8208c0f0d">
+<img width="1088" alt="Slab regular" src="https://github.com/user-attachments/assets/b389dc12-b5b9-4b48-9c40-26f2374e44d2">
+<img width="1088" alt="Slab italic" src="https://github.com/user-attachments/assets/eb97bca6-d702-4dde-9c0e-23e99168e877">
 
-### Examples
+#### Example
+<img width="470" alt="Slab example" src="https://github.com/user-attachments/assets/c3297d0e-1fdf-4b2a-9dc7-3b84a4b71269">
 
-<img width="714" alt="Lua Sans example" src="https://github.com/user-attachments/assets/cac0a04b-925c-4088-843a-e8cb68713730">
 
-<img width="574" alt="Sans React example" src="https://github.com/user-attachments/assets/4127c7e3-4c59-4c59-9ceb-662c8c123e19">
+### Brainy
+<img width="1088" alt="Brainy regular" src="https://github.com/user-attachments/assets/d84e555e-64fc-4aa7-a47d-2bfdd60a11e5">
+<img width="1088" alt="Brainy italic" src="https://github.com/user-attachments/assets/dfd9c1d1-43ef-4c82-95df-33f5a874242c">
 
-<img width="587" alt="Slab React example" src="https://github.com/user-attachments/assets/bb87f314-2661-4f66-8ce5-39d9782db615">
+### Example
+<img width="470" alt="Brainy example" src="https://github.com/user-attachments/assets/0ec052bb-8866-4c74-b523-ce8ade230078">
+
 
 
 ## Inspirations
