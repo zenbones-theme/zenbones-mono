@@ -53,10 +53,11 @@ buildTextureFeature = true
     six = "straight-bar"
     seven = "curly-serifless-crossbar"
     nine = "straight-bar"
-    zero = "tall-slashed-cutout"
+    zero = "dotted"
     capital-d = "standard-serifless"
+    capital-q = "crossing"
+    g = "single-storey-serifless"
     l = "serifed-semi-tailed"
-    m = "short-leg-serifless"
     u = "toothless-rounded-serifless"
     tittle = "square"
     diacritic-dot = "square"
@@ -67,6 +68,7 @@ buildTextureFeature = true
     brace = "curly-flat-boundary"
     dollar = "through"
     percent = "rings-continuous-slash"
+    cent = "through"
 
     [buildPlans.ZenbonesMono.variants.italic]
     a = "single-storey-tailed"
@@ -113,10 +115,11 @@ ligations.inherits = "buildPlans.ZenbonesMono"
     six = "straight-bar"
     seven = "curly-serifed-crossbar"
     nine = "straight-bar"
-    zero = "tall-slashed-cutout"
+    zero = "dotted"
     capital-d = "standard-bilateral-serifed"
+    capital-q = "crossing"
+    g = "single-storey-serifed"
     l = "serifed-semi-tailed"
-    m = "short-leg-serifed"
     u = "toothless-rounded-serifed"
     tittle = "square"
     diacritic-dot = "square"
@@ -127,15 +130,61 @@ ligations.inherits = "buildPlans.ZenbonesMono"
     brace = "curly-flat-boundary"
     dollar = "through"
     percent = "rings-continuous-slash"
+    cent = "through"
 
     [buildPlans.ZenbonesSlabMono.variants.italic]
     a = "single-storey-tailed"
     e = "rounded"
     i = "tailed-serifed"
     f = "tailed"
-    m = "short-leg-top-left-and-bottom-right-serifed"
     p = "eared-motion-serifed"
     q = "straight-serifless"
     s = "unilateral-serifed"
     u = "toothless-rounded-motion-serifed"
     z = "curly-top-serifed"
+
+[buildPlans.ZenbonesBrainyMono]
+family = "Zenbones Brainy Mono"
+spacing = "term"
+serifs = "sans"
+exportGlyphNames = true
+buildTextureFeature = true
+
+widths.inherits = "buildPlans.ZenbonesMono"
+weights.inherits = "buildPlans.ZenbonesMono"
+ligations.inherits = "buildPlans.ZenbonesMono"
+
+  [buildPlans.ZenbonesBrainyMono.metricOverride]
+  xHeight = 550
+
+  [buildPlans.ZenbonesBrainyMono.variants]
+  inherits = "buildPlans.ZenbonesMono"
+  
+    [buildPlans.ZenbonesBrainyMono.variants.design]
+    seven = "straight-serifless"
+    capital-a = "straight-serifless"
+    capital-i = "serifed"
+    capital-k = "symmetric-connected-serifless"
+    capital-n = "standard-serifless"
+    capital-r = "straight-serifless"
+    capital-v = "straight-serifless"
+    capital-w = "straight-flat-top-serifless"
+    capital-x = "straight-serifless"
+    capital-y = "straight-serifless"
+    capital-z = "straight-serifless"
+    f = "flat-hook-serifless-crossbar-at-x-height"
+    g = "single-storey-flat-hook-serifless"
+    j = "flat-hook-serifed"
+    k = "symmetric-connected-serifless"
+    r = "hookless-serifless"
+    t = "flat-hook"
+    v = "straight-serifless"
+    w = "straight-flat-top-serifless"
+    x = "straight-serifless"
+    y = "straight-serifless"
+    z = "straight-serifless"
+
+    [buildPlans.ZenbonesBrainyMono.variants.italic]
+    f = "flat-hook-tailed-crossbar-at-x-height"
+    i = "serifed-flat-tailed"
+    y = "cursive-flat-hook-serifless"
