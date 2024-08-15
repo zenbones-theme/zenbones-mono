@@ -186,3 +186,72 @@ ligations.inherits = "buildPlans.ZenbonesMono"
     f = "flat-hook-tailed-crossbar-at-x-height"
     i = "serifed-flat-tailed"
     y = "cursive-flat-hook-serifless"
+
+[buildPlans.ZenbonesProtoMono]
+family = "Zenbones Proto Mono"
+spacing = "term"
+serifs = "sans"
+exportGlyphNames = true
+buildTextureFeature = true
+
+widths.inherits = "buildPlans.ZenbonesMono"
+weights.inherits = "buildPlans.ZenbonesMono"
+ligations.inherits = "buildPlans.ZenbonesMono"
+
+  [buildPlans.ZenbonesProtoMono.metricOverride]
+  xHeight = 550
+
+  [buildPlans.ZenbonesProtoMono.weights.regular]
+  shape = 475
+  menu = 400
+  css = 400
+
+  [buildPlans.ZenbonesProtoMono.weights.semibold]
+  shape = 625
+  menu = 600
+  css = 600
+
+  [buildPlans.ZenbonesProtoMono.variants]
+  inherits = "buildPlans.ZenbonesMono"
+  
+    [buildPlans.ZenbonesProtoMono.variants.design]
+    one = "base"
+    three = "two-arcs"
+    seven = "curly-serifed"
+    capital-d = "more-rounded-serifless"
+    capital-i = "serifed"
+    capital-j = "flat-hook-serifed"
+    capital-k = "straight-serifless"
+    capital-n = "standard-serifless"
+    capital-x = "straight-serifless"
+    capital-y = "straight-serifless"
+    capital-z = "straight-serifless"
+    a = "double-storey-tailed"
+    b = "toothed-motion-serifed"
+    d = "tailed-serifless"
+    f = "tailed"
+    g = "double-storey-open"
+    h = "straight-top-left-serifed"
+    j = "flat-hook-serifed"
+    k = "straight-serifless"
+    m = "short-leg-serifless"
+    p = "eared-motion-serifed"
+    q = "tailed-serifless"
+    r = "serifed"
+    t = "flat-hook-short-neck"
+    u = "tailed-serifless"
+    x = "straight-serifless"
+    y = "cursive-motion-serifed"
+    z = "straight-serifless"
+    at = "compact"
+
+    [buildPlans.ZenbonesProtoMono.variants.italic]
+    a = "single-storey-earless-corner-tailed"
+    g = "single-storey-serifless"
+    h = "straight-motion-serifed"
+    i = "tailed-serifed"
+    j = "serifed"
+    m = "short-leg-tailed-serifless"
+    n = "tailed-serifless"
+    t = "bent-hook"
+    x = "semi-chancery-straight-serifless"
