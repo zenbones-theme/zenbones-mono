@@ -61,7 +61,6 @@ buildTextureFeature = true
     tittle = "square"
     diacritic-dot = "square"
     punctuation-dot = "square"
-    underscore = "above-baseline"
     caret = "low"
     paren = "flat-arc"
     brace = "curly-flat-boundary"
@@ -75,8 +74,8 @@ buildTextureFeature = true
     i = "tailed-serifed"
     f = "tailed"
 
-[buildPlans.ZenbonesSlabMono]
-family = "Zenbones Slab Mono"
+[buildPlans.ZenbonesSlab]
+family = "Zenbones Slab"
 spacing = "term"
 serifs = "slab"
 exportGlyphNames = true
@@ -85,28 +84,28 @@ buildTextureFeature = true
 widths.inherits = "buildPlans.ZenbonesMono"
 ligations.inherits = "buildPlans.ZenbonesMono"
 
-  [buildPlans.ZenbonesSlabMono.metricOverride]
+  [buildPlans.ZenbonesSlab.metricOverride]
   xHeight = 550
 
-  [buildPlans.ZenbonesSlabMono.weights.regular]
+  [buildPlans.ZenbonesSlab.weights.regular]
   shape = 400
   menu = 400
   css = 400
 
-  [buildPlans.ZenbonesSlabMono.weights.semibold]
+  [buildPlans.ZenbonesSlab.weights.semibold]
   shape = 600
   menu = 600
   css = 600
 
-  [buildPlans.ZenbonesSlabMono.weights.bold]
+  [buildPlans.ZenbonesSlab.weights.bold]
   shape = 700
   menu = 700
   css = 700
 
-  [buildPlans.ZenbonesSlabMono.variants]
+  [buildPlans.ZenbonesSlab.variants]
   inherits = "ss08"
 
-    [buildPlans.ZenbonesSlabMono.variants.design]
+    [buildPlans.ZenbonesSlab.variants.design]
     two = "straight-neck-serifed"
     three = "flat-top-serifed"
     four = "semi-open-serifed"
@@ -122,7 +121,6 @@ ligations.inherits = "buildPlans.ZenbonesMono"
     tittle = "square"
     diacritic-dot = "square"
     punctuation-dot = "square"
-    underscore = "above-baseline"
     caret = "low"
     paren = "flat-arc"
     brace = "curly-flat-boundary"
@@ -130,7 +128,7 @@ ligations.inherits = "buildPlans.ZenbonesMono"
     percent = "rings-continuous-slash"
     cent = "through"
 
-    [buildPlans.ZenbonesSlabMono.variants.italic]
+    [buildPlans.ZenbonesSlab.variants.italic]
     a = "single-storey-tailed"
     e = "rounded"
     i = "tailed-serifed"
@@ -141,8 +139,8 @@ ligations.inherits = "buildPlans.ZenbonesMono"
     u = "toothless-rounded-motion-serifed"
     z = "curly-top-serifed"
 
-[buildPlans.ZenbonesBrainyMono]
-family = "Zenbones Brainy Mono"
+[buildPlans.ZenbonesBrainy]
+family = "Zenbones Brainy"
 spacing = "term"
 serifs = "sans"
 exportGlyphNames = true
@@ -152,13 +150,13 @@ widths.inherits = "buildPlans.ZenbonesMono"
 weights.inherits = "buildPlans.ZenbonesMono"
 ligations.inherits = "buildPlans.ZenbonesMono"
 
-  [buildPlans.ZenbonesBrainyMono.metricOverride]
+  [buildPlans.ZenbonesBrainy.metricOverride]
   xHeight = 550
 
-  [buildPlans.ZenbonesBrainyMono.variants]
+  [buildPlans.ZenbonesBrainy.variants]
   inherits = "buildPlans.ZenbonesMono"
   
-    [buildPlans.ZenbonesBrainyMono.variants.design]
+    [buildPlans.ZenbonesBrainy.variants.design]
     seven = "straight-serifless"
     capital-a = "straight-serifless"
     capital-i = "serifed"
@@ -182,13 +180,13 @@ ligations.inherits = "buildPlans.ZenbonesMono"
     y = "straight-serifless"
     z = "straight-serifless"
 
-    [buildPlans.ZenbonesBrainyMono.variants.italic]
+    [buildPlans.ZenbonesBrainy.variants.italic]
     f = "flat-hook-tailed-crossbar-at-x-height"
     i = "serifed-flat-tailed"
     y = "cursive-flat-hook-serifless"
 
-[buildPlans.ZenbonesProtoMono]
-family = "Zenbones Proto Mono"
+[buildPlans.ZenbonesProto]
+family = "Zenbones Proto"
 spacing = "term"
 serifs = "sans"
 exportGlyphNames = true
@@ -198,34 +196,29 @@ widths.inherits = "buildPlans.ZenbonesMono"
 weights.inherits = "buildPlans.ZenbonesMono"
 ligations.inherits = "buildPlans.ZenbonesMono"
 
-  [buildPlans.ZenbonesProtoMono.metricOverride]
+  [buildPlans.ZenbonesProto.metricOverride]
   xHeight = 550
 
-  [buildPlans.ZenbonesProtoMono.weights.regular]
+  [buildPlans.ZenbonesProto.weights.regular]
   shape = 475
   menu = 400
   css = 400
 
-  [buildPlans.ZenbonesProtoMono.weights.semibold]
+  [buildPlans.ZenbonesProto.weights.semibold]
   shape = 625
   menu = 600
   css = 600
 
-  [buildPlans.ZenbonesProtoMono.variants]
+  [buildPlans.ZenbonesProto.variants]
   inherits = "buildPlans.ZenbonesMono"
   
-    [buildPlans.ZenbonesProtoMono.variants.design]
+    [buildPlans.ZenbonesProto.variants.design]
     one = "base"
     three = "two-arcs"
     seven = "curly-serifed"
-    capital-d = "more-rounded-serifless"
     capital-i = "serifed"
     capital-j = "flat-hook-serifed"
-    capital-k = "straight-serifless"
     capital-n = "standard-serifless"
-    capital-x = "straight-serifless"
-    capital-y = "straight-serifless"
-    capital-z = "straight-serifless"
     a = "double-storey-tailed"
     b = "toothed-motion-serifed"
     d = "tailed-serifless"
@@ -233,19 +226,16 @@ ligations.inherits = "buildPlans.ZenbonesMono"
     g = "double-storey-open"
     h = "straight-top-left-serifed"
     j = "flat-hook-serifed"
-    k = "straight-serifless"
     m = "short-leg-serifless"
     p = "eared-motion-serifed"
     q = "tailed-serifless"
     r = "serifed"
     t = "flat-hook-short-neck"
     u = "tailed-serifless"
-    x = "straight-serifless"
     y = "cursive-motion-serifed"
-    z = "straight-serifless"
     at = "compact"
 
-    [buildPlans.ZenbonesProtoMono.variants.italic]
+    [buildPlans.ZenbonesProto.variants.italic]
     a = "single-storey-earless-corner-tailed"
     g = "single-storey-serifless"
     h = "straight-motion-serifed"
@@ -253,5 +243,4 @@ ligations.inherits = "buildPlans.ZenbonesMono"
     j = "serifed"
     m = "short-leg-tailed-serifless"
     n = "tailed-serifless"
-    t = "bent-hook"
     x = "semi-chancery-straight-serifless"
