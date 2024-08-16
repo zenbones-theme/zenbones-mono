@@ -36,7 +36,7 @@ jobs:
       - name: Build Zenbones Mono
         run: |
           cd ../Iosevka
-          cp ../zenbones-mono/src/private-build-plans.toml ./private-build-plans.toml
+          cp ../zenbones-mono/private-build-plans.toml ./private-build-plans.toml
           npm install
           npm run build -- contents::${{ matrix.version }}
 
