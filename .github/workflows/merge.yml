@@ -42,7 +42,7 @@ jobs:
 
       - name: Zip build files
         run: |
-          cd ../dist
+          cd ./dist
           tar czf ${{ matrix.typeface }}.tar.gz ${{ matrix.typeface }}
 
       - name: Upload zip file
