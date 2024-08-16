@@ -1,0 +1,99 @@
+name: Merge
+
+on:
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+  workflow_call:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        typeface: [ZenbonesMono, ZenbonesSlab, ZenbonesBrainy, ZenbonesProto]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+
+      - name: Install ttfautohint
+        run: |
+          sudo apt-get update
+          sudo apt-get install ttfautohint
+
+      - name: Clone Iosevka
+        run: |
+          cd ..
+          iosevka_version=$(cat ./zenbones-mono/.iosevka-version)
+          git clone --depth 1 https://github.com/be5invis/Iosevka.git
+          cd Iosevka
+          git fetch --tags --quiet
+          git checkout tags/${iosevka_version}
+
+      - name: Build Zenbones Mono
+        run: |
+          cd ../Iosevka
+          cp ../zenbones-mono/src/private-build-plans.toml ./private-build-plans.toml
+          npm install
+          npm run build -- contents::${{ matrix.version }}
+
+      - name: Zip build files
+        run: |
+          cd ../dist
+          tar czf ${{ matrix.version }}.tar.gz ${{ matrix.version }}
+
+      - name: Upload zip file
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: /home/runner/work/zenbones-mono/Iosevka/dist/${{ matrix.version }}.tar.gz
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+
+      - name: Download all workflow run artifacts
+        uses: actions/download-artifact@v4
+        with
+          name: build-output
+          path: /home/runner/work/zenbones-mono/artifacts
+
+      - name: Check Zenbones Mono version change
+        uses: tj-actions/changed-files@v44
+        id: check-zenbones-version
+        with:
+          files: |
+            .version
+
+      - name: Create tag
+        id: create_tag
+        if: steps.check-zenbones-version.outputs.any_modified == 'true'
+        run: |
+          version=$(cat .version)
+          echo "tag=${version}" >> $GITHUB_OUTPUT
+
+          git config --global user.email "hello@michaelchris.space"
+          git config --global user.name "Michael Chris Lopez"
+
+          git tag -a ${version} -m "Zenbones Mono ${version}"
+          git push origin ${version}
+
+      - name: Create release
+        if: steps.check-zenbones-version.outputs.any_modified == 'true'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.create_tag.outputs.tag }}
+          name: ${{ steps.create_tag.outputs.tag }}
+          body: "See changelog for details. https://github.com/zenbones-theme/zenbones-mono/blob/main/CHANGELOG.md"
+          files: |
+            /home/runner/work/zenbones-mono/artifacts/*.tar.gz
+
+  # call-create-images-workflow:
+  #   uses: ./.github/workflows/create-images.yml
+  #   needs: build
