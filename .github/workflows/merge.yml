@@ -38,18 +38,18 @@ jobs:
           cd ../Iosevka
           cp ../zenbones-mono/private-build-plans.toml ./private-build-plans.toml
           npm install
-          npm run build -- contents::${{ matrix.version }}
+          npm run build -- contents::${{ matrix.typeface }}
 
       - name: Zip build files
         run: |
           cd ../dist
-          tar czf ${{ matrix.version }}.tar.gz ${{ matrix.version }}
+          tar czf ${{ matrix.typeface }}.tar.gz ${{ matrix.typeface }}
 
       - name: Upload zip file
         uses: actions/upload-artifact@v4
         with:
           name: build-output
-          path: /home/runner/work/zenbones-mono/Iosevka/dist/${{ matrix.version }}.tar.gz
+          path: /home/runner/work/zenbones-mono/Iosevka/dist/${{ matrix.typeface }}.tar.gz
 
   release:
     needs: build
