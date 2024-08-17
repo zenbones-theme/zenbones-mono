@@ -180,6 +180,7 @@ ligations.inherits = "buildPlans.Zenbones-Mono"
     y = "straight-serifless"
     z = "straight-serifless"
     paren = "flat-arc"
+    question = "corner-flat-hooked"
 
     [buildPlans.Zenbones-Brainy.variants.italic]
     f = "flat-hook-tailed-crossbar-at-x-height"
