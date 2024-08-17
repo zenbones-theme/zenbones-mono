@@ -2,7 +2,7 @@ name: Release
 
 on:
   push:
-    tags: '**'
+    tags: "**"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -16,7 +16,13 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        typeface: ["Zenbones-Mono", "Zenbones-Slab", "Zenbones-Brainy", "Zenbones-Proto"]
+        typeface:
+          [
+            "Zenbones-Mono",
+            "Zenbones-Slab",
+            "Zenbones-Brainy",
+            "Zenbones-Proto",
+          ]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

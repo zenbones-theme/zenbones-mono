@@ -14,7 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        typeface: ["Zenbones-Mono", "Zenbones-Slab", "Zenbones-Brainy", "Zenbones-Proto"]
+        typeface:
+          [
+            "Zenbones-Mono",
+            "Zenbones-Slab",
+            "Zenbones-Brainy",
+            "Zenbones-Proto",
+          ]
     steps:
       - uses: actions/checkout@v4
 
@@ -94,6 +100,7 @@ jobs:
       - name: Download all workflow run artifacts
         uses: actions/download-artifact@v4
         with:
+          pattern: "*-{specimen,weights}"
           path: images
           merge-multiple: true
 
