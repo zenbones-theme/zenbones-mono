@@ -36,23 +36,23 @@ jobs:
 
       - name: Generate specimen image
         run: |
-          convert -size 1200x630 xc:'#f0edec' \
+          convert -size 1200x660 xc:'#f0edec' \
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
           -draw "text 0,10  'ABC.DEF.GHI.JKL.MNO.PQRS.TUV.WXYZ'" \
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,80  'abc.def.ghi.jkl.mno.pqrs.tuv.wxyz'" \
+          -draw "text 0,90  'abc.def.ghi.jkl.mno.pqrs.tuv.wxyz'" \
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,150 '!iIlL17|¦ ¢coO08BbDQ $5SZ2zs 96µm'" \
+          -draw "text 0,170 '!iIlL17|¦ ¢coO08BbDQ $5SZ2zs 96µm'" \
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,220 'float il1[]={1-2/3.4,5+6=7/8%90};'" \
+          -draw "text 0,250 'float il1[]={1-2/3.4,5+6=7/8%90};'" \
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,290 '1234567890 ,._-+= >< «¯-¬_» ~–÷+×'" \
+          -draw "text 0,330 '1234567890 ,._-+= >< «¯-¬_» ~–÷+×'" \
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,360 '{*}[]()<>\`+-=$/#_%^@\\&|~?\'\" !,.;:'" \
+          -draw "text 0,410 '{*}[]()<>\`+-=$/#_%^@\\&|~?\'\" !,.;:'" \
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,430 'CG6Qg9q¶ Þẞðþſß ΓΔΛαβγδιλμνξπτυχ∂'" \
+          -draw "text 0,490 'CG6Qg9q¶ Þẞðþſß ΓΔΛαβγδιλμνξπτυχ∂'" \
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,500 'ЖЗКНРУЭЯавжзклмнруфчьыэя <= != =='" \
+          -draw "text 0,570 'ЖЗКНРУЭЯавжзклмнруфчьыэя <= != =='" \
           ${{ matrix.typeface }}-specimen.png
 
       - name: Upload specimen images
