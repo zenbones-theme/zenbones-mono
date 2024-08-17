@@ -49,7 +49,7 @@ jobs:
           -draw "text 0,90 '!iIlL17|¦ ¢coO08BbDQ $5SZ2zs 96µm float il1[]={1-2/3.4,5+6=7/8%90};'" \
           -gravity center \
           -font ${{ matrix.typeface }} -pointsize 40 -fill '#2c363c' \
-          -draw "text 0,150 '1234567890 ,._-+= >< «¯-¬_» ~–÷+× {*}[]()<>`+-=$/#_%^@\&|~?\'\" !,.;:'" \
+          -draw "text 0,150 '1234567890 ,._-+= >< «¯-¬_» ~–÷+× {*}[]()<>\`+-=$/#_%^@\&|~?\'\" !,.;:'" \
           -font ${{ matrix.typeface }} -pointsize 40 -fill '#2c363c' \
           -draw "text 0,210 'CG6Qg9q¶ Þẞðþſß ΓΔΛαβγδιλμνξπτυχ∂ ЖЗКНРУЭЯавжзклмнруфчьыэя <= != =='" \
           ${{ matrix.typeface }}-specimen.png
