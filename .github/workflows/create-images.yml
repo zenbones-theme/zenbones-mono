@@ -31,7 +31,7 @@ jobs:
         working-directory: fonts
         run: |
           tar xzf ${{ matrix.typeface }}.tar.gz
-          sudo cp ./${{ matrix.typeface }}/TTF/*.ttf /usr/local/share/fonts
+          sudo cp --verbose ./${{ matrix.typeface }}/TTF/*.ttf /usr/local/share/fonts
           sudo fc-cache -f -v
 
       - name: Generate specimen image
