@@ -89,31 +89,31 @@ jobs:
           name: ${{ matrix.typeface }}-weights
           path: images/${{ matrix.typeface }}-weights.png
 
-commit:
-  needs: build
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v4
+  commit:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
-    - name: Download all workflow run artifacts
-      uses: actions/download-artifact@v4
-      with:
-        path: zenbones-mono/images
-        merge-multiple: true
+      - name: Download all workflow run artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: zenbones-mono/images
+          merge-multiple: true
 
-    - name: Commit and push image changes
-      working-directory: zenbones-mono
-      run: |
-        git add images/*.png
-        git config --local user.email "hello@michaelchris.space"
-        git config --local user.name "Michael Chris Lopez"
+      - name: Commit and push image changes
+        working-directory: zenbones-mono
+        run: |
+          git add images/*.png
+          git config --local user.email "hello@michaelchris.space"
+          git config --local user.name "Michael Chris Lopez"
 
-        status=$(git status --porcelain)
+          status=$(git status --porcelain)
 
-        if [[ -z "$status" ]]; then
-          echo "No changes to commit"
-          exit 0
-        else
-          git commit -m "Update images"
-          git push
-        fi
+          if [[ -z "$status" ]]; then
+            echo "No changes to commit"
+            exit 0
+          else
+            git commit -m "Update images"
+            git push
+          fi
