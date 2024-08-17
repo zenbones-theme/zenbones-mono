@@ -35,34 +35,23 @@ jobs:
           sudo fc-cache -f -v
 
       - name: Generate specimen image
-        run: |
-          rm -rf images
-          mkdir images
-          cd images
+        run:
           convert -size 1200x660 xc:'#f0edec' \
-          -gravity center \
-          -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,10 'ABC.DEF.GHI.JKL.MNO.PQRS.TUV.WXYZ'" \
-          -gravity center \
-          -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,70 'abc.def.ghi.jkl.mno.pqrs.tuv.wxyz'" \
-          -gravity center \
-          -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
+          -gravity north -font ${{ matrix.typeface }} -pointsize 45 -fill '#2c363c' \
+          -draw "text 0,10  'ABC.DEF.GHI.JKL.MNO.PQRS.TUV.WXYZ'" \
+          -gravity north -font ${{ matrix.typeface }} -pointsize 45 -fill '#2c363c' \
+          -draw "text 0,70  'abc.def.ghi.jkl.mno.pqrs.tuv.wxyz'" \
+          -gravity north -font ${{ matrix.typeface }} -pointsize 45 -fill '#2c363c' \
           -draw "text 0,130 '!iIlL17|¦ ¢coO08BbDQ $5SZ2zs 96µm'" \
-          -gravity center \
-          -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
+          -gravity north -font ${{ matrix.typeface }} -pointsize 45 -fill '#2c363c' \
           -draw "text 0,190 'float il1[]={1-2/3.4,5+6=7/8%90};'" \
-          -gravity center \
-          -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
+          -gravity north -font ${{ matrix.typeface }} -pointsize 45 -fill '#2c363c' \
           -draw "text 0,250 '1234567890 ,._-+= >< «¯-¬_» ~–÷+×'" \
-          -gravity center \
-          -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
+          -gravity north -font ${{ matrix.typeface }} -pointsize 45 -fill '#2c363c' \
           -draw "text 0,310 '{*}[]()<>\`+-=$/#_%^@\\&|~?\'\" !,.;:'" \
-          -gravity center \
-          -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
+          -gravity north -font ${{ matrix.typeface }} -pointsize 45 -fill '#2c363c' \
           -draw "text 0,370 'CG6Qg9q¶ Þẞðþſß ΓΔΛαβγδιλμνξπτυχ∂'" \
-          -gravity center \
-          -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
+          -gravity north -font ${{ matrix.typeface }} -pointsize 45 -fill '#2c363c' \
           -draw "text 0,430 'ЖЗКНРУЭЯавжзклмнруфчьыэя <= != =='" \
           ${{ matrix.typeface }}-specimen.png
 
@@ -70,7 +59,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.typeface }}-specimen
-          path: images/${{ matrix.typeface }}-specimen.png
+          path: ${{ matrix.typeface }}-specimen.png
 
       - name: Generate weights image
         run: |
