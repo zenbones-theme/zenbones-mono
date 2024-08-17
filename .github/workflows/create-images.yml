@@ -39,17 +39,19 @@ jobs:
           rm -rf images
           mkdir images
           cd images
-          convert -size 1200x630 xc:'#f0edec' -gravity north -font ${{ matrix.typeface }} -pointsize 256 -fill '#2c363c' \
+          convert -size 1200x630 xc:'#f0edec' -gravity north -font ${{ matrix.typeface }} -pointsize 128 -fill '#2c363c' \
           -draw "text 0,10 'Aa'" \
           -gravity center \
-          -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,40 'ABCDEFGHIJKLMNOPQRSTUVWXYZ 01234'" \
+          -font ${{ matrix.typeface }} -pointsize 40 -fill '#2c363c' \
+          -draw "text 0,30 'ABC.DEF.GHI.JKL.MNO.PQRS.TUV.WXYZ abc.def.ghi.jkl.mno.pqrs.tuv.wxyz'" \
           -gravity center \
-          -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,120 'abcdefghijklmnopqrstuvwxyz 56789'" \
+          -font ${{ matrix.typeface }} -pointsize 40 -fill '#2c363c' \
+          -draw "text 0,90 '!iIlL17|¦ ¢coO08BbDQ $5SZ2zs 96µm float il1[]={1-2/3.4,5+6=7/8%90};'" \
           -gravity center \
-          -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,210 '{}[]()<>\`~!@#$%^&*?,.;:\'\"-_+=|\/'" \
+          -font ${{ matrix.typeface }} -pointsize 40 -fill '#2c363c' \
+          -draw "text 0,150 '1234567890 ,._-+= >< «¯-¬_» ~–÷+× {*}[]()<>`+-=$/#_%^@\&|~?\'\" !,.;:'" \
+          -font ${{ matrix.typeface }} -pointsize 40 -fill '#2c363c' \
+          -draw "text 0,210 'CG6Qg9q¶ Þẞðþſß ΓΔΛαβγδιλμνξπτυχ∂ ЖЗКНРУЭЯавжзклмнруфчьыэя <= != =='" \
           ${{ matrix.typeface }}-specimen.png
 
       - name: Upload specimen images
