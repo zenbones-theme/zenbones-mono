@@ -40,19 +40,19 @@ jobs:
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
           -draw "text 0,10  'ABC.DEF.GHI.JKL.MNO.PQRS.TUV.WXYZ'" \
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,70  'abc.def.ghi.jkl.mno.pqrs.tuv.wxyz'" \
+          -draw "text 0,80  'abc.def.ghi.jkl.mno.pqrs.tuv.wxyz'" \
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,130 '!iIlL17|¦ ¢coO08BbDQ $5SZ2zs 96µm'" \
+          -draw "text 0,140 '!iIlL17|¦ ¢coO08BbDQ $5SZ2zs 96µm'" \
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,190 'float il1[]={1-2/3.4,5+6=7/8%90};'" \
+          -draw "text 0,200 'float il1[]={1-2/3.4,5+6=7/8%90};'" \
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,250 '1234567890 ,._-+= >< «¯-¬_» ~–÷+×'" \
+          -draw "text 0,260 '1234567890 ,._-+= >< «¯-¬_» ~–÷+×'" \
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,310 '{*}[]()<>\`+-=$/#_%^@\\&|~?\'\" !,.;:'" \
+          -draw "text 0,320 '{*}[]()<>\`+-=$/#_%^@\\&|~?\'\" !,.;:'" \
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,370 'CG6Qg9q¶ Þẞðþſß ΓΔΛαβγδιλμνξπτυχ∂'" \
+          -draw "text 0,380 'CG6Qg9q¶ Þẞðþſß ΓΔΛαβγδιλμνξπτυχ∂'" \
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,430 'ЖЗКНРУЭЯавжзклмнруфчьыэя <= != =='" \
+          -draw "text 0,440 'ЖЗКНРУЭЯавжзклмнруфчьыэя <= != =='" \
           ${{ matrix.typeface }}-specimen.png
 
       - name: Upload specimen images
