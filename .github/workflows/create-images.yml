@@ -94,7 +94,7 @@ jobs:
       - name: Download all workflow run artifacts
         uses: actions/download-artifact@v4
         with:
-          path: zenbones-mono/images
+          path: images
           merge-multiple: true
 
       - name: Push changes

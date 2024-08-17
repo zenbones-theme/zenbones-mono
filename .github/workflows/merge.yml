@@ -63,7 +63,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
 
       - name: Download all workflow run artifacts
         uses: actions/download-artifact@v4
@@ -97,7 +96,6 @@ jobs:
         with:
           tag_name: ${{ steps.create_tag.outputs.tag }}
           name: ${{ steps.create_tag.outputs.tag }}
-          body: "See changelog for details. https://github.com/zenbones-theme/zenbones-mono/blob/main/CHANGELOG.md"
           files: |
             /home/runner/work/zenbones-mono/artifacts/*.tar.gz
 
