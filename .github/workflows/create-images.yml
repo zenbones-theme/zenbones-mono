@@ -42,7 +42,7 @@ jobs:
           -draw "text 0,10 'Aa'" \
           -gravity center \
           -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw ${{ matrix.typeface }} "text 0,40 'ABCDEFGHIJKLMNOPQRSTUVWXYZ 01234'" \
+          -draw "text 0,40 'ABCDEFGHIJKLMNOPQRSTUVWXYZ 01234'" \
           -gravity center \
           -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
           -draw "text 0,120 'abcdefghijklmnopqrstuvwxyz 56789'" \
