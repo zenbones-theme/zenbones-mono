@@ -16,6 +16,8 @@ jobs:
       matrix:
         typeface: ["Zenbones-Mono", "Zenbones-Slab", "Zenbones-Brainy", "Zenbones-Proto"]
     steps:
+      - uses: actions/checkout@v4
+
       - name: Set up ImageMagick
         run: |
           sudo apt-get install imagemagick
@@ -24,8 +26,6 @@ jobs:
       - name: Download release file
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OWNER: ${{ github.repository_owner }}
-          REPO: ${{ github.event.repository.name }}
         run: gh release download --pattern ${{ matrix.typeface }}.tar.gz
 
       - name: Install font
