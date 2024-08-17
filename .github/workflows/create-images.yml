@@ -22,6 +22,10 @@ jobs:
           export PATH=$PATH:/usr/bin:/usr/local/bin:/usr/local/imagemagick/bin
 
       - name: Download release file
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
         run: gh release download --pattern ${{ matrix.typeface }}.tar.gz
 
       - name: Install font
