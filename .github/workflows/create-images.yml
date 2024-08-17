@@ -60,27 +60,20 @@ jobs:
       - name: Generate weights image
         working-directory: images
         run: |
-          convert -size 1200x630 xc:'#f0edec' \
-          -gravity north -font ${{ matrix.typeface }}-Light -pointsize 45 -fill '#2c363c' \
-          -draw "text 0,20 'A quick brown fox jumps over the lazy dog'" \
-          -gravity north -font ${{ matrix.typeface }}-Light-Italic -pointsize 45 -fill '#2c363c' \
-          -draw "text 0,80 'A quick brown fox jumps over the lazy dog'" \
+          convert -size 1200x390 xc:'#f0edec' \
           -gravity north -font ${{ matrix.typeface }} -pointsize 45 -fill '#2c363c' \
-          -draw "text 0,140 'A quick brown fox jumps over the lazy dog'" \
+          -draw "text 0,20 'A quick brown fox jumps over the lazy dog'" \
           -gravity north -font ${{ matrix.typeface }}-Italic -pointsize 45 -fill '#2c363c' \
+          -draw "text 0,80 'A quick brown fox jumps over the lazy dog'" \
+          -gravity north -font ${{ matrix.typeface }}-Semibold -pointsize 45 -fill '#2c363c' \
+          -draw "text 0,140 'A quick brown fox jumps over the lazy dog'" \
+          -gravity north -font ${{ matrix.typeface }}-Semibold-Italic -pointsize 45 -fill '#2c363c' \
           -draw "text 0,200 'A quick brown fox jumps over the lazy dog'" \
-          -gravity north -font ${{ matrix.typeface }}-Medium -pointsize 45 -fill '#2c363c' \
+          -gravity north -font ${{ matrix.typeface }}-Bold -pointsize 45 -fill '#2c363c' \
           -draw "text 0,260 'A quick brown fox jumps over the lazy dog'" \
-          -gravity north -font ${{ matrix.typeface }}-Medium-Italic -pointsize 45 -fill '#2c363c' \
+          -gravity north -font ${{ matrix.typeface }}-Bold-Italic -pointsize 45 -fill '#2c363c' \
           -draw "text 0,320 'A quick brown fox jumps over the lazy dog'" \
           -gravity north -font ${{ matrix.typeface }}-Semibold -pointsize 45 -fill '#2c363c' \
-          -draw "text 0,380 'A quick brown fox jumps over the lazy dog'" \
-          -gravity north -font ${{ matrix.typeface }}-Semibold-Italic -pointsize 45 -fill '#2c363c' \
-          -draw "text 0,440 'A quick brown fox jumps over the lazy dog'" \
-          -gravity north -font ${{ matrix.typeface }}-Bold -pointsize 45 -fill '#2c363c' \
-          -draw "text 0,500 'A quick brown fox jumps over the lazy dog'" \
-          -gravity north -font ${{ matrix.typeface }}-Bold-Italic -pointsize 45 -fill '#2c363c' \
-          -draw "text 0,560 'A quick brown fox jumps over the lazy dog'" \
           ${{ matrix.typeface }}-weights.png
 
       - name: Upload weight images
