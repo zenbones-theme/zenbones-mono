@@ -49,9 +49,8 @@ jobs:
       - name: Upload zip file
         uses: actions/upload-artifact@v4
         with:
-          cd ../Iosevka/dist
           name: ${{ matrix.typeface }}
-          path: ${{ matrix.typeface }}.tar.gz
+          path: /home/runner/work/zenbones-mono/Iosevka/dist/${{ matrix.typeface }}.tar.gz
 
   release:
     needs: build
