@@ -35,7 +35,7 @@ jobs:
           sudo fc-cache -f -v
 
       - name: Generate specimen image
-        run:
+        run: |
           convert -size 1200x630 xc:'#f0edec' \
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
           -draw "text 0,10  'ABC.DEF.GHI.JKL.MNO.PQRS.TUV.WXYZ'" \
