@@ -36,6 +36,7 @@ jobs:
 
       - name: Generate specimen image
         run: |
+          rm -rf images
           mkdir images
           cd images
           convert -size 1200x630 xc:'#f0edec' -gravity north -font ${{ matrix.typeface }} -pointsize 256 -fill '#2c363c' \
