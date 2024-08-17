@@ -42,7 +42,7 @@ jobs:
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
           -draw "text 0,90  'abc.def.ghi.jkl.mno.pqrs.tuv.wxyz'" \
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
-          -draw "text 0,170 '!iIlL17|¦ ¢coO08BbDQ $5SZ2zs 96µm'" \
+          -draw "text 0,170 '!iIlL17|¦ ¢coO08BbDQ \$5SZ2zs 96µm'" \
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
           -draw "text 0,250 'float il1[]={1-2/3.4,5+6=7/8%90};'" \
           -gravity north -font ${{ matrix.typeface }} -pointsize 60 -fill '#2c363c' \
