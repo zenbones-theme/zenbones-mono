@@ -21,20 +21,13 @@ jobs:
           sudo apt-get install imagemagick
           export PATH=$PATH:/usr/bin:/usr/local/bin:/usr/local/imagemagick/bin
 
-      - name: Download artifacts
-        id: download_artifacts
-        uses: dawidd6/action-download-artifact@v6
-        with:
-          workflow: merge.yml
-          workflow_conclusion: success
-          name: ${{ matrix.typeface }}
-          path: fonts
+      - name: Download release file
+        run: gh release download --pattern ${{ matrix.typeface }}.tar.gz
 
       - name: Install font
-        working-directory: fonts
         run: |
           tar xzf ${{ matrix.typeface }}.tar.gz
-          sudo cp --verbose ./${{ matrix.typeface }}/TTF/*.ttf /usr/local/share/fonts
+          sudo cp ${{ matrix.typeface }}/TTF/*.ttf /usr/local/share/fonts
           sudo fc-cache -f -v
 
       - name: Generate specimen image
@@ -61,7 +54,6 @@ jobs:
           path: images/${{ matrix.typeface }}-specimen.png
 
       - name: Generate weights image
-        working-directory: images
         run: |
           convert -size 1200x390 xc:'#f0edec' \
           -gravity north -font ${{ matrix.typeface }} -pointsize 45 -fill '#2c363c' \
@@ -83,7 +75,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.typeface }}-weights
-          path: images/${{ matrix.typeface }}-weights.png
+          path: ${{ matrix.typeface }}-weights.png
 
   commit:
     needs: build

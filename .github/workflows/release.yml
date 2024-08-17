@@ -73,5 +73,5 @@ jobs:
           files: artifacts/*.tar.gz
 
   call-create-images-workflow:
+    needs: release
     uses: ./.github/workflows/create-images.yml
-    needs: build
