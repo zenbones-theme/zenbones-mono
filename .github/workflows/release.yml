@@ -26,8 +26,8 @@ jobs:
           sudo apt-get install ttfautohint
 
       - name: Clone Iosevka
-        working-directory: ../
         run: |
+          cd ..
           iosevka_version=$(cat ./zenbones-mono/.iosevka-version)
           git clone --depth 1 https://github.com/be5invis/Iosevka.git
           cd Iosevka
@@ -35,21 +35,21 @@ jobs:
           git checkout tags/${iosevka_version}
 
       - name: Build Zenbones Mono
-        working-directory: ../Iosevka/
         run: |
+          cd ../Iosevka
           cp ../zenbones-mono/private-build-plans.toml ./private-build-plans.toml
           npm install
           npm run build -- contents::${{ matrix.typeface }}
 
       - name: Zip build files
-        working-directory: ../Iosevka/dist/
         run: |
+          cd ../Iosevka/dist
           tar czf ${{ matrix.typeface }}.tar.gz ${{ matrix.typeface }}
 
       - name: Upload zip file
         uses: actions/upload-artifact@v4
-        working-directory: ../Iosevka/dist/
         with:
+          cd ../Iosevka/dist
           name: ${{ matrix.typeface }}
           path: ${{ matrix.typeface }}.tar.gz
 
