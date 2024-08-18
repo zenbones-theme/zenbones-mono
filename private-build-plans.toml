@@ -130,6 +130,7 @@ ligations.inherits = "buildPlans.Zenbones-Mono"
 
     [buildPlans.Zenbones-Slab.variants.italic]
     a = "single-storey-tailed"
+    d = "toothed-top-serifed"
     e = "rounded"
     i = "tailed-serifed"
     f = "tailed"

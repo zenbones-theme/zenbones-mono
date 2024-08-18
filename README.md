@@ -74,9 +74,9 @@ font_features Zenbones-Mono-Semibold-Italic +TXTR +cv07=10 +cv10=13 +VSAG=1
 
 ## Inspirations
 
-- Pragmata Pro
-- [Berkeley Mono](https://berkeleygraphics.com/typefaces/berkeley-mono)
-- JetBrains Mono
+- [Pragmata Pro](https://fsd.it/shop/fonts/pragmatapro/)
+- [Berkeley Mono](https://berkeleygraphics.com/typefaces/berkeley-mono/)
+- [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 - [0xProto](https://github.com/0xType/0xProto)
 - [Pragmasevka](https://github.com/shytikov/pragmasevka)
 - [Iosvmata](https://github.com/N-R-K/Iosvmata)
