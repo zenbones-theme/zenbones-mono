@@ -218,12 +218,17 @@ ligations.inherits = "buildPlans.Zenbones-Mono"
   [buildPlans.Zenbones-Proto.metricOverride]
   xHeight = 550
 
-  [buildPlans.Zenbones-Proto.weights.regular]
+  [buildPlans.Zenbones-Proto.weights.Regular]
   shape = 475
   menu = 400
   css = 400
 
-  [buildPlans.Zenbones-Proto.weights.semibold]
+  [buildPlans.Zenbones-Proto.weights.Medium]
+  shape = 575
+  menu = 500
+  css = 500
+
+  [buildPlans.Zenbones-Proto.weights.SemiBold]
   shape = 625
   menu = 600
   css = 600
