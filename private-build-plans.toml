@@ -68,6 +68,7 @@ buildTextureFeature = true
     dollar = "through"
     percent = "rings-continuous-slash"
     cent = "through"
+    question = "corner-flat-hooked"
 
     [buildPlans.Zenbones-Mono.variants.italic]
     a = "single-storey-tailed"
@@ -129,6 +130,7 @@ ligations.inherits = "buildPlans.Zenbones-Mono"
     dollar = "through"
     percent = "rings-continuous-slash"
     cent = "through"
+    question = "corner-flat-hooked"
 
     [buildPlans.Zenbones-Slab.variants.italic]
     a = "single-storey-tailed"
@@ -183,7 +185,6 @@ ligations.inherits = "buildPlans.Zenbones-Mono"
     y = "straight-serifless"
     z = "straight-serifless"
     paren = "large-contour"
-    question = "corner-flat-hooked"
 
     [buildPlans.Zenbones-Brainy.variants.italic]
     f = "flat-hook-tailed"
@@ -238,7 +239,6 @@ ligations.inherits = "buildPlans.Zenbones-Mono"
     t = "flat-hook-short-neck"
     u = "tailed-serifless"
     y = "cursive-motion-serifed"
-    at = "compact"
 
     [buildPlans.Zenbones-Proto.variants.italic]
     a = "single-storey-earless-corner-tailed"
