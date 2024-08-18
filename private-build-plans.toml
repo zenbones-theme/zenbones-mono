@@ -104,6 +104,7 @@ buildTextureFeature = true
     e = "rounded"
     i = "tailed-serifed"
     f = "tailed"
+    y = "cursive-serifless"
 
 [buildPlans.Zenbones-Slab]
 family = "Zenbones Slab"
@@ -120,41 +121,15 @@ ligations.inherits = "buildPlans.Zenbones-Mono"
   xHeight = 550
 
   [buildPlans.Zenbones-Slab.variants]
-  inherits = "ss08"
-
-    [buildPlans.Zenbones-Slab.variants.design]
-    two = "straight-neck-serifed"
-    three = "flat-top-serifed"
-    four = "semi-open-serifed"
-    five = "oblique-flat-serifed"
-    six = "straight-bar"
-    nine = "straight-bar"
-    zero = "dotted"
-    capital-d = "standard-bilateral-serifed"
-    capital-q = "crossing"
-    g = "single-storey-serifed"
-    l = "serifed-semi-tailed"
-    t = "bent-hook-short-neck"
-    tittle = "square"
-    diacritic-dot = "square"
-    punctuation-dot = "square"
-    caret = "low"
-    paren = "normal"
-    brace = "curly-flat-boundary"
-    dollar = "through"
-    percent = "rings-continuous-slash"
-    cent = "through"
-    question = "corner-flat-hooked"
+  inherits = "buildPlans.Zenbones-Mono"
 
     [buildPlans.Zenbones-Slab.variants.italic]
     a = "single-storey-tailed"
     d = "toothed-top-serifed"
-    e = "rounded"
-    i = "tailed-serifed"
-    f = "tailed"
     p = "eared-motion-serifed"
     q = "straight-serifless"
     s = "unilateral-serifed"
+    y = "cursive-motion-serifed"
     z = "curly-top-serifed"
 
 [buildPlans.Zenbones-Brainy]
