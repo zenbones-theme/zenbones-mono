@@ -10,20 +10,50 @@ buildTextureFeature = true
   menu = 5
   css = "normal"
 
-  [buildPlans.Zenbones-Mono.weights.regular]
+  [buildPlans.Zenbones-Mono.weights.Thin]
+  shape = 125
+  menu = 100
+  css = 100
+
+  [buildPlans.Zenbones-Mono.weights.ExtraLight]
+  shape = 225
+  menu = 200
+  css = 200
+
+  [buildPlans.Zenbones-Mono.weights.Light]
+  shape = 325
+  menu = 300
+  css = 300
+
+  [buildPlans.Zenbones-Mono.weights.Regular]
   shape = 425
   menu = 400
   css = 400
 
-  [buildPlans.Zenbones-Mono.weights.semibold]
+  [buildPlans.Zenbones-Mono.weights.Medium]
+  shape = 500
+  menu = 500
+  css = 500
+
+  [buildPlans.Zenbones-Mono.weights.SemiBold]
   shape = 600
   menu = 600
   css = 600
 
-  [buildPlans.Zenbones-Mono.weights.bold]
+  [buildPlans.Zenbones-Mono.weights.Bold]
   shape = 700
   menu = 700
   css = 700
+
+  [buildPlans.Zenbones-Mono.weights.ExtraBold]
+  shape = 800
+  menu = 800
+  css = 800
+
+  [buildPlans.Zenbones-Mono.weights.Heavy]
+  shape = 900
+  menu = 900
+  css = 900
 
   [buildPlans.Zenbones-Mono.metricOverride]
   xHeight = 550
@@ -83,25 +113,11 @@ exportGlyphNames = true
 buildTextureFeature = true
 
 widths.inherits = "buildPlans.Zenbones-Mono"
+weights.inherits = "buildPlans.Zenbones-Mono"
 ligations.inherits = "buildPlans.Zenbones-Mono"
 
   [buildPlans.Zenbones-Slab.metricOverride]
   xHeight = 550
-
-  [buildPlans.Zenbones-Slab.weights.regular]
-  shape = 400
-  menu = 400
-  css = 400
-
-  [buildPlans.Zenbones-Slab.weights.semibold]
-  shape = 600
-  menu = 600
-  css = 600
-
-  [buildPlans.Zenbones-Slab.weights.bold]
-  shape = 700
-  menu = 700
-  css = 700
 
   [buildPlans.Zenbones-Slab.variants]
   inherits = "ss08"
