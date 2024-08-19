@@ -64,7 +64,11 @@ buildTextureFeature = true
     "lteq",
     "eqlt",
     "gteq",
-    "exeq"
+    "exeq",
+    "minus-minus",
+    "minus-minus-minus",
+    "underscore-underscore",
+    "underscore-underscore-underscore"
   ]
   enables = [
     "lteq-separate",
