@@ -52,14 +52,17 @@ jobs:
 
       - name: Zip build files
         run: |
-          cd ../Iosevka/dist
-          tar czf ${{ matrix.typeface }}.tar.gz ${{ matrix.typeface }}
+          cd ../Iosevka/dist/${{ matrix.typeface }}
+          zip -r ${{ matrix.typeface }}-TTF.zip TTF
+          zip -r ${{ matrix.typeface }}-TTF-Unhinted.zip TTF-Unhinted
+          zip -r ${{ matrix.typeface }}-WOFF2.zip WOFF2 ${{ matrix.typeface }}.css
+          zip -r ${{ matrix.typeface }}-WOFF2-Unhinted.zip WOFF2 ${{ matrix.typeface }}-Unhinted.css
 
       - name: Upload zip file
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.typeface }}
-          path: /home/runner/work/zenbones-mono/Iosevka/dist/${{ matrix.typeface }}.tar.gz
+          path: /home/runner/work/zenbones-mono/Iosevka/dist/*.zip
 
   release:
     needs: build
@@ -76,7 +79,7 @@ jobs:
         with:
           tag_name: ${{ github.ref_name }}
           name: ${{ github.ref_name }}
-          files: artifacts/*.tar.gz
+          files: artifacts/*.zip
 
   call-create-images-workflow:
     needs: release

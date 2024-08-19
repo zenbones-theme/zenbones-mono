@@ -32,12 +32,12 @@ jobs:
       - name: Download release file
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release download --pattern ${{ matrix.typeface }}.tar.gz
+        run: gh release download --pattern ${{ matrix.typeface }}-TTF.zip
 
       - name: Install font
         run: |
-          tar xzf ${{ matrix.typeface }}.tar.gz
-          sudo cp ${{ matrix.typeface }}/TTF/*.ttf /usr/local/share/fonts
+          unzip ${{ matrix.typeface }}-TTF.zip
+          sudo cp TTF/*.ttf /usr/local/share/fonts
           sudo fc-cache -f -v
 
       - name: Generate specimen image
