@@ -123,6 +123,14 @@ ligations.inherits = "buildPlans.Zenbones-Mono"
   [buildPlans.Zenbones-Slab.variants]
   inherits = "buildPlans.Zenbones-Mono"
 
+  [buildPlans.Zenbones-Slab.variants.design]
+    two = "straight-neck-serifed"
+    three = "flat-top-serifed"
+    four = "semi-open-serifed"
+    five = "oblique-flat-serifed"
+    capital-d = "standard-bilateral-serifed"
+    g = "single-storey-serifed"
+
     [buildPlans.Zenbones-Slab.variants.italic]
     a = "single-storey-tailed"
     d = "toothed-top-serifed"
