@@ -62,7 +62,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.typeface }}
-          path: /home/runner/work/zenbones-mono/Iosevka/dist/*.zip
+          path: /home/runner/work/zenbones-mono/Iosevka/dist/${{ matrix.typeface }}/*.zip
 
   release:
     needs: build
