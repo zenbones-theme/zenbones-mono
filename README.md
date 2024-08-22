@@ -12,6 +12,13 @@ inspirations from various programming typefaces.
 - Cherry-picked letter variants inspired from various programming fonts and also
   some personal tastes
 
+## Variants
+
+- [Zenbones Mono](#mono): [Pragmata Pro](https://fsd.it/shop/fonts/pragmatapro/) inspired.
+- [Zenbones Slab](#slab): Slab version.
+- [Zenbones Brainy](#brainy): [JetBrains Mono](https://www.jetbrains.com/lp/mono/) and [Berkeley Mono](https://berkeleygraphics.com/typefaces/berkeley-mono/) inspired.
+- [Zenbones Proto](#proto): [0xProto](https://github.com/0xType/0xProto) inspired.
+
 ## Install
 
 The font can be download from the
@@ -20,8 +27,6 @@ The font can be download from the
 ## Specimen
 
 ### Mono
-
-Pragmata Pro inspired.
 
 ![Zenbones Mono specimen](./images/Zenbones-Mono-specimen.png)
 
@@ -39,8 +44,6 @@ Pragmata Pro inspired.
 
 ### Brainy
 
-JetBrains Mono and Berkeley Mono inspired.
-
 ![Zenbones Brainy specimen](./images/Zenbones-Brainy-specimen.png)
 
 #### Weights
@@ -48,8 +51,6 @@ JetBrains Mono and Berkeley Mono inspired.
 ![Zenbones Brainy weights](./images/Zenbones-Brainy-weights.png)
 
 ### Proto
-
-0xProto inspired.
 
 ![Zenbones Proto specimen](./images/Zenbones-Proto-specimen.png)
 
@@ -72,11 +73,7 @@ font_features Zenbones-Mono-Italic          +TXTR +cv07=10 +cv10=13 +VSAG=1
 font_features Zenbones-Mono-Semibold-Italic +TXTR +cv07=10 +cv10=13 +VSAG=1
 ```
 
-## Inspirations
+## Other inspirations
 
-- [Pragmata Pro](https://fsd.it/shop/fonts/pragmatapro/)
-- [Berkeley Mono](https://berkeleygraphics.com/typefaces/berkeley-mono/)
-- [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
-- [0xProto](https://github.com/0xType/0xProto)
 - [Pragmasevka](https://github.com/shytikov/pragmasevka)
 - [Iosvmata](https://github.com/N-R-K/Iosvmata)
