@@ -14,10 +14,12 @@ inspirations from various programming typefaces.
 
 ## Variants
 
-- [Zenbones Mono](#mono): [Pragmata Pro](https://fsd.it/shop/fonts/pragmatapro/) inspired.
-- [Zenbones Slab](#slab): Slab version.
-- [Zenbones Brainy](#brainy): [JetBrains Mono](https://www.jetbrains.com/lp/mono/) and [Berkeley Mono](https://berkeleygraphics.com/typefaces/berkeley-mono/) inspired.
-- [Zenbones Proto](#proto): [0xProto](https://github.com/0xType/0xProto) inspired.
+| Variant                    | Inspiration                                                                                                                     |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| [Zenbones Mono](#mono)     | [Pragmata Pro](https://fsd.it/shop/fonts/pragmatapro/)                                                                          |
+| [Zenbones Slab](#slab)     | Slab version                                                                                                                    |
+| [Zenbones Brainy](#brainy) | [JetBrains Mono](https://www.jetbrains.com/lp/mono/) and [Berkeley Mono](https://berkeleygraphics.com/typefaces/berkeley-mono/) |
+| [Zenbones Proto](#proto)   | [0xProto](https://github.com/0xType/0xProto)                                                                                    |
 
 ## Install
 
