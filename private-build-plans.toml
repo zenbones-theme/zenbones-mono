@@ -90,6 +90,7 @@ buildTextureFeature = true
     capital-d = "standard-serifless"
     capital-q = "crossing"
     g = "single-storey-serifless"
+    j = "flat-hook-serifed"
     l = "serifed-semi-tailed"
     t = "flat-hook-short-neck"
     tittle = "square"
@@ -184,6 +185,7 @@ ligations.inherits = "buildPlans.Zenbones-Mono"
     z = "straight-serifless"
 
     [buildPlans.Zenbones-Brainy.variants.italic]
+    i = "serifed"
     f = "flat-hook-tailed"
     y = "cursive-flat-hook-serifless"
 
