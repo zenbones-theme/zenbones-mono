@@ -107,6 +107,7 @@ buildTextureFeature = true
     [buildPlans.Zenbones-Mono.variants.italic]
     a = "single-storey-tailed"
     e = "rounded"
+    g = "single-storey-serifless"
     i = "serifed-flat-tailed"
     f = "tailed"
     y = "cursive-serifless"
@@ -136,7 +137,6 @@ ligations.inherits = "buildPlans.Zenbones-Mono"
     capital-d = "standard-bilateral-serifed"
 
     [buildPlans.Zenbones-Slab.variants.italic]
-    a = "single-storey-tailed"
     d = "toothed-top-serifed"
     p = "eared-motion-serifed"
     q = "straight-serifless"
@@ -254,7 +254,6 @@ ligations.inherits = "buildPlans.Zenbones-Mono"
 
     [buildPlans.Zenbones-Proto.variants.italic]
     a = "single-storey-earless-corner-tailed"
-    g = "single-storey-serifless"
     h = "straight-motion-serifed"
     m = "short-leg-tailed-serifless"
     n = "tailed-serifless"
