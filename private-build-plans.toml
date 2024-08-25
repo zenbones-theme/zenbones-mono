@@ -259,6 +259,12 @@ noLigation = true
 widths.inherits = "buildPlans.Zenbones-Mono"
 weights.inherits = "buildPlans.Zenbones-Mono"
 
+  [buildPlans.Zenbones-Prose.metricOverride]
+  xHeight = 550
+
+  [buildPlans.Zenbones-Prose.variants]
+  inherits = "buildPlans.Zenbones-Mono"
+
     [buildPlans.Zenbones-Prose.variants.design]
     seven = "straight-serifless"
     capital-a = "straight-serifless"
@@ -286,3 +292,4 @@ weights.inherits = "buildPlans.Zenbones-Mono"
 
     [buildPlans.Zenbones-Prose.variants.italic]
     f = "flat-hook-tailed"
+    y = "cursive-serifless"
