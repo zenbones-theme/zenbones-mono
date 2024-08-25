@@ -20,6 +20,7 @@ jobs:
             "Zenbones-Slab",
             "Zenbones-Brainy",
             "Zenbones-Proto",
+            "Zenbones-Prose",
           ]
     steps:
       - uses: actions/checkout@v4

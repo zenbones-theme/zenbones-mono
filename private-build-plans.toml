@@ -249,3 +249,40 @@ ligations.inherits = "buildPlans.Zenbones-Mono"
     n = "tailed-serifless"
     x = "semi-chancery-straight-serifless"
     y = "cursive-motion-serifed"
+
+[buildPlans.Zenbones-Prose]
+family = "Zenbones Prose"
+spacing = "quasi-proportional"
+serifs = "sans"
+noLigation = true
+
+widths.inherits = "buildPlans.Zenbones-Mono"
+weights.inherits = "buildPlans.Zenbones-Mono"
+
+    [buildPlans.Zenbones-Prose.variants.design]
+    seven = "straight-serifless"
+    capital-a = "straight-serifless"
+	capital-k = "straight-serifless"
+    capital-n = "standard-serifless"
+    capital-r = "straight-serifless"
+    capital-v = "straight-serifless"
+	capital-w = "straight-flat-top-serifless"
+    capital-x = "straight-serifless"
+    capital-y = "straight-serifless"
+    capital-z = "straight-serifless"
+    f = "flat-hook-serifless"
+	i = "serifless"
+	j = "flat-hook-serifless"
+	k = "straight-serifless"
+	l = "serifless"
+    v = "straight-serifless"
+	w = "straight-flat-top-serifless"
+    x = "straight-serifless"
+    y = "straight-serifless"
+    z = "straight-serifless"
+	tittle = "round"
+	diacritic-dot = "round"
+	punctuation-dot = "round"
+
+    [buildPlans.Zenbones-Prose.variants.italic]
+    f = "flat-hook-tailed"

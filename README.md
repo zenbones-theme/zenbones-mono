@@ -20,6 +20,7 @@ inspirations from various programming typefaces.
 | [Zenbones Slab](#slab)     | Slab version                                                                                                                    |
 | [Zenbones Brainy](#brainy) | [JetBrains Mono](https://www.jetbrains.com/lp/mono/) and [Berkeley Mono](https://berkeleygraphics.com/typefaces/berkeley-mono/) |
 | [Zenbones Proto](#proto)   | [0xProto](https://github.com/0xType/0xProto)                                                                                    |
+| [Zenbones Prose](#prose)   | Quasi-proportional version                                                                                                      |
 
 ## Install
 
@@ -59,6 +60,14 @@ The font can be download from the
 #### Weights
 
 ![Zenbones Proto weights](./images/Zenbones-Proto-weights.png)
+
+### Prose
+
+![Zenbones Prose specimen](./images/Zenbones-Prose-specimen.png)
+
+#### Weights
+
+![Zenbones Prose weights](./images/Zenbones-Prose-weights.png)
 
 ## Customization
 
