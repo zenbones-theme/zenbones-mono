@@ -57,7 +57,7 @@ jobs:
           zip -r ${{ matrix.typeface }}-TTF.zip TTF
           zip -r ${{ matrix.typeface }}-TTF-Unhinted.zip TTF-Unhinted
           zip -r ${{ matrix.typeface }}-WOFF2.zip WOFF2 ${{ matrix.typeface }}.css
-          zip -r ${{ matrix.typeface }}-WOFF2-Unhinted.zip WOFF2 ${{ matrix.typeface }}-Unhinted.css
+          zip -r ${{ matrix.typeface }}-WOFF2-Unhinted.zip WOFF2-Unhinted ${{ matrix.typeface }}-Unhinted.css
 
       - name: Upload zip file
         uses: actions/upload-artifact@v4
