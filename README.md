@@ -1,4 +1,4 @@
-# Zenbones Mono
+# [Zenbones Mono](https://michaelchris.space/zenbones-mono)
 
 Comfy. Condensed. Coding.
 
