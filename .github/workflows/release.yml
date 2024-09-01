@@ -81,7 +81,3 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh release create ${{ github.ref_name }} artifacts/*.zip
-
-  call-create-images-workflow:
-    needs: release
-    uses: ./.github/workflows/create-images.yml
