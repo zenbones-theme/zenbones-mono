@@ -55,6 +55,24 @@ buildTextureFeature = true
   menu = 900
   css = 900
 
+  [buildPlans.Zenbones-Mono.slopes.Upright]
+  angle = 0
+  shape = "upright"
+  menu  = "upright"
+  css   = "normal"
+
+  [buildPlans.Zenbones-Mono.slopes.Oblique]
+  angle = 9
+  shape = "oblique"
+  menu  = "oblique"
+  css   = "oblique"
+
+  [buildPlans.Zenbones-Mono.slopes.Italic]
+  angle = 9
+  shape = "italic"
+  menu  = "italic"
+  css   = "italic"
+
   [buildPlans.Zenbones-Mono.metricOverride]
   xHeight = 550
 
@@ -121,6 +139,7 @@ buildTextureFeature = true
 
 widths.inherits = "buildPlans.Zenbones-Mono"
 weights.inherits = "buildPlans.Zenbones-Mono"
+slopes.inherits = "buildPlans.Zenbones-Mono"
 ligations.inherits = "buildPlans.Zenbones-Mono"
 
   [buildPlans.Zenbones-Slab.metricOverride]
@@ -153,6 +172,7 @@ buildTextureFeature = true
 
 widths.inherits = "buildPlans.Zenbones-Mono"
 weights.inherits = "buildPlans.Zenbones-Mono"
+slopes.inherits = "buildPlans.Zenbones-Mono"
 ligations.inherits = "buildPlans.Zenbones-Mono"
 
   [buildPlans.Zenbones-Brainy.metricOverride]
@@ -210,6 +230,7 @@ buildTextureFeature = true
 
 widths.inherits = "buildPlans.Zenbones-Mono"
 weights.inherits = "buildPlans.Zenbones-Mono"
+slopes.inherits = "buildPlans.Zenbones-Mono"
 ligations.inherits = "buildPlans.Zenbones-Mono"
 
   [buildPlans.Zenbones-Proto.metricOverride]
@@ -268,6 +289,7 @@ noLigation = true
 
 widths.inherits = "buildPlans.Zenbones-Mono"
 weights.inherits = "buildPlans.Zenbones-Mono"
+slopes.inherits = "buildPlans.Zenbones-Mono"
 
   [buildPlans.Zenbones-Prose.metricOverride]
   xHeight = 550
